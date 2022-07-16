@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+#title{
+    font-family: 'Lobster Two', cursive;
+}
+
+#description{
+    font-size: medium;
+}
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}

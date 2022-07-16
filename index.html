@@ -2,25 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <header>
 
-    Hello Camper!
+    </header>
+    <main>
+      <section class="bg-image p-5 text-center shadow-1-strong rounded text-white"
+      style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');" >
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <div class="mb-3 h2">
+        <h1 id="title">Microverse Survey Form</h1>
+        <hr> 
+        <p id="description"> Thank you for taking the time to help us improve the platform </p>
+      </div>
 
-    - The freeCodeCamp Team
+      <div class="container mt-4">
+        <form id="contact">
+          <div class="content2 mt-3">
+            <div class="mb-3">
+              <span><i class="fas fa-user fa-2x"></i></span>
+              <label for="name" class="form-label fs-2 text"> Full name: </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Juan Manuel"
+                required
+                maxlength="50"
+              />
+            </div>
+   
+            <div class="mb-3">
+              <span><i class="fas fa-envelope fa-2x"></i></span>
+              <label for="email" class="form-label fs-2 text">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="cell" class="form-label fs-2 text" >
+              <span><i class="fas fa-phone-alt"></i></span>Number of cellphone:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cell"
+                placeholder="+54 11 381-1234567"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="message"
+                class="form-label fs-2 text">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary mb-3" id="submit">
+              Submit
+            </button>
+          </div>
+          </div>
+        </form>
 
-    -->
+      </div>
+
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
