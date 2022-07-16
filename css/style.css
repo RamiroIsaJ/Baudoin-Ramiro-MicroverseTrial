@@ -8,7 +8,14 @@
     font-size: medium;
 }
 
-.container{
+.containerF{
     margin-left: 20%;
     margin-right: 20%;
+    background-color: rgb(101, 101, 196);
+    opacity: 0.75;
+}
+
+.containerS{
+    margin-left: 10%;
+    margin-right: 10%;
 }

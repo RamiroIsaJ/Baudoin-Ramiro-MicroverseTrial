@@ -17,18 +17,17 @@
       <section class="bg-image p-5 text-center shadow-1-strong rounded text-white"
       style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');" >
 
-      <div class="mb-3 h2">
+      <div class="mb-3 h2 mb-5">
         <h1 id="title">Microverse Survey Form</h1>
         <hr> 
         <p id="description"> Thank you for taking the time to help us improve the platform </p>
       </div>
 
-      <div class="container mt-4">
-        <form id="contact">
+      <div class="containerF mt-5">
+        <form id="survey-form">
           <div class="content2 mt-3">
-            <div class="mb-3">
-              <span><i class="fas fa-user fa-2x"></i></span>
-              <label for="name" class="form-label fs-2 text"> Full name: </label>
+            <div class="mb-3 containerS">
+              <label for="name" class="form-label fs-4 text"> Name: </label>
               <input
                 type="text"
                 class="form-control"
@@ -39,38 +38,88 @@
               />
             </div>
    
-            <div class="mb-3">
+            <div class="mb-3 containerS">
               <span><i class="fas fa-envelope fa-2x"></i></span>
-              <label for="email" class="form-label fs-2 text">Email:</label>
+              <label for="email" class="form-label fs-4 text">Email:</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
                 placeholder="nombre@ejemplo.com"
+                maxlength="40"
                 required
               />
             </div>
-            <div class="mb-3">
-              <label for="cell" class="form-label fs-2 text" >
-              <span><i class="fas fa-phone-alt"></i></span>Number of cellphone:</label>
+            <div class="mb-3 containerS">
+              <label for="cell" class="form-label fs-4 text" >
+              <span><i class="fas fa-phone-alt"></i></span>Age (optional):</label>
               <input
-                type="text"
+                type="number"
                 class="form-control"
-                id="cell"
-                placeholder="+54 11 381-1234567"
+                id="age"
+                min="10"
+                max="99"
+                placeholder="20"
+                maxlength="3"
                 required
               />
             </div>
-            <div class="mb-3">
+            <div class="mb-3 containerS">
+              <label for="cell" class="form-label fs-4 text" >
+              <span><i class="fas fa-phone-alt"></i></span> Which option best describes your current role?</label>
+              <select class="form-select" aria-label="">
+                <option selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time Job</option>
+                <option value="3">Full time Learner</option>
+                <option value="4">Prefer not say</option>
+                <option value="5">Other</option>
+              </select>
+            </div>
+            <div class="mb-3 containerS">
+              <label for="cell" class="form-label fs-4 text" >
+              <span><i class="fas fa-phone-alt"></i></span> Which option best describes your current role?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Front-End Projects
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Back-End Projects
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Data Visualization
+                </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Challenges
+              </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Open Source Community
+            </label>
+        </div>
+            </div>
+            <div class="mb-3 containerS">
               <label
                 for="message"
-                class="form-label fs-2 text">Message:</label>
+                class="form-label fs-4 text">Message:</label>
               <textarea
                 class="form-control"
                 id="message"
                 rows="3"></textarea>
             </div>
-            <div class="d-grid gap-2">
+            <div class="d-grid gap-2 containerS">
             <button type="submit" class="btn btn-primary mb-3" id="submit">
               Submit
             </button>
